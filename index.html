@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XUR Realty Inc.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --dark: #0b1c2d;
+      --gray: #f5f7fa;
+      --text: #444;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      color: var(--dark);
+    }
+
+    section {
+      padding: 90px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .btn {
+      padding: 14px 32px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: #084298;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(11,28,45,.7), rgba(11,28,45,.7)),
+        url("images/deca.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 5vw, 3.8rem);
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
+
+    .hero-actions {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    /* ===== ABOUT ===== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    /* ===== PROJECTS ===== */
+    .projects {
+      background: var(--gray);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      transition: transform .3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .project-card div {
+      padding: 25px;
+    }
+
+    .projects {
+      padding-bottom: 100px;
+    }
+
+    /* ===== STATS ===== */
+    .stats {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+
+    .stat h2 {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+    }
+
+    /* ===== AGENT ===== */
+    .agent {
+      text-align: center;
+    }
+
+    .agent img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      background: var(--gray);
+    }
+
+    form {
+      max-width: 550px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--dark);
+      color: #bbb;
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
+</head><link rel="stylesheet" href="css/style.css">
+
+
+<body>
+
+
+<header>
+  <nav>
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/hero-banner2.jpg" alt="XUR Realty Inc. Logo">
+      </a>
+    </div>
+
+    <!-- Hamburger icon -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menu -->
+    <ul id="nav-menu">
+      <li><a href="index.html" id="nav-home">Home</a></li>
+      <li><a href="projects.html" id="nav-projects">Projects</a></li>
+      <li><a href="listings.html" id="nav-listings">Listings</a></li>
+      <li><a href="agent.html" id="nav-agent">Agent</a></li>
+      <li><a href="contact.html" id="nav-contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1></h1>
+    <p>
+      
+    </p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Inquire Now
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <div class="container about-grid">
+    <div>
+      <h2>About Our Developments</h2>
+      <p>
+        XUR Realty Inc. delivers quality residential projects designed for
+        comfort, accessibility, and long-term value. Our developments are
+        strategically located near transport hubs, business districts,
+        and essential services.
+      </p>
+    </div>
+    <div>
+      <img src="images/hero-banner2.jpg" style="width:100%; border-radius:16px;">
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects">
+  <div class="container">
+    <h2 style="text-align:center;">Featured Projects</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="images/decacubao.png">
+        <div>
+          <h3>Urban Deca Towers Cubao</h3>
+          <p>Welcome to the heart of urban living – Urban Deca Towers Cubao, nestled in the vibrant Araneta City, Cubao. Here, we offer the perfect blend of convenience, accessibility, and modern living to cater to the ambitions and aspirations of the average working individual.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project3.png">
+        <div>
+          <h3>Urban Deca Homes Commonwealth</h3>
+          <p>Make your dream of a comfortable and modern house in Quezon City come true. Experience the perfect blend of convenience and accessibility at Urban Deca Homes Commonwealth. Our affordable home in the bustling heart of Quezon City offers a variety of unit options to cater to your needs and preferences.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/decamahogany.png">
+        <div>
+          <h3>Urban Deca Homes Mahogany</h3>
+          <p>Developed to be the pride of Imus, Cavite, Urban Deca Homes Mahogany is your ultimate affordable home in the heart of the province.
+The residential community offers units that perfectly match your needs, prices that fit your budget, and a location close to all modern conveniences. Get ready to embrace a better tomorrow with Urban Deca Homes Mahogany.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat">
+      <h2>10+</h2>
+      <p>Completed Projects</p>
+    </div>
+    <div class="stat">
+      <h2>5,000+</h2>
+      <p>Happy Homeowners</p>
+    </div>
+    <div class="stat">
+      <h2>15 Years</h2>
+      <p>Industry Experience</p>
+    </div>
+  </div>
+</section>
+
+<!-- AGENT -->
+<section class="agent">
+  <div class="container">
+    <img src="images/agent.png" alt="Property Consultant">
+    <h2>Wiz Khalifa</h2>
+    <p>
+      Helping clients find the right home and investment with transparency
+      and professional service.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 style="text-align:center;">Get in Touch</h2>
+
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Contact Number" required>
+      <textarea rows="4" placeholder="Your Inquiry" required></textarea>
+      <button class="btn btn-primary" style="width:100%;">Submit Inquiry</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2025 Urban Deca Homes | Real Estate Portfolio
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
